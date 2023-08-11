@@ -179,19 +179,20 @@
     const $btnIcon = document.querySelector('#btnWrapper div')
     const $header = document.querySelector('header')
     const $links = document.querySelectorAll('nav ul li')
+    const $nav = document.querySelector('nav')
+
+    const openCloseNavbar = () => {
+        $btnIcon?.classList.toggle('close')
+        $header?.classList.toggle('show')
+    }
 
     if (window.innerWidth < 481) {
-        console.log('paso')
         $btnIcon?.addEventListener('click', () => {
-            $btnIcon.classList.toggle('close')
-            $header?.classList.toggle('show')
+            openCloseNavbar()
         })
 
-        $links.forEach(li => {
-            li.addEventListener('click', () => {
-                $btnIcon?.classList.remove('close')
-                $header?.classList.remove('show')
-            })
+        $nav?.addEventListener('click', () => {
+            openCloseNavbar()
         })
     }
 </script>
