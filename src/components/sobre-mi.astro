@@ -1,0 +1,72 @@
+---
+import SectionTitle from "./sectionTitle.astro";
+---
+
+<section id="sobre-mi">
+    <SectionTitle title="Sobre mi"/>
+
+    <div class="texto">
+        <p>Me encanta el diseño y más el diseño de páginas webs, también adoro el modelado 3D y las películas, en especial las de Marvel. Actualmente, estoy estudiando la carrera de Diseño Multimedial en la Universidad Da Vinci.</p>
+
+        <p>Tengo conocimiento en:</p>
+    </div>
+
+    <div class="logosWrapper">
+        <div><img src="../../public/assets/svg/Logos/html-logo.svg" alt="HTML5 Logo" title="HTML5"></div>
+        <div><img src="../../public/assets/svg/Logos/css-logo.svg" alt="CSS3 Logo" title="CSS3"></div>
+        <div><img src="../../public/assets/svg/Logos/angular-logo.svg" alt="Angular Logo" title="Angular"></div>
+        <div><img src="../../public/assets/svg/Logos/git-logo.svg" alt="GIT Logo" title="GIT"></div>
+        <div><img src="../../public/assets/svg/Logos/sass-logo.svg" alt="SASS Logo" title="SASS"></div>
+        <div><img src="../../public/assets/svg/Logos/ionic-logo.svg" alt="Ionic Logo" title="Ionic"></div>
+        <div><img src="../../public/assets/svg/Logos/github-logo.svg" alt="GitHub Logo"  title="GitHub"></div>
+        <div><img src="../../public/assets/svg/Logos/js-logo.svg" alt="Javascript Logo" title="Javascript"></div>
+        <div><img src="../../public/assets/svg/Logos/ts-logo.svg" alt="Typescript Logo" title="Typescript"></div>
+        <div><img src="../../public/assets/svg/Logos/AI-logo.svg" alt="Adobe Illustrator Logo" title="Adobe Illustrator"></div>
+        <div><img src="../../public/assets/svg/Logos/PSD-logo.svg" alt="Adobe Photoshop Logo" title="Adobe Photoshop"></div>
+    </div>
+
+</section>
+
+<style lang="scss">
+    #sobre-mi {
+        background-color: #FFF;
+        padding: 10px 10px 40px;
+        color: #5452C9;
+    }
+    
+    .texto {
+        max-width: 1080px;
+        margin: 0 auto;
+        p {
+            text-align: center;
+            margin-top: 10px;
+
+            &:last-of-type {
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .logosWrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 25px 20px;
+
+        div {
+            width: 84px;
+            height: 84px;
+
+            img {
+                height: 100%;
+            }
+        }
+    }
+
+    @media screen and (min-width: 481px) {
+        #sobre-mi {
+            padding-top: 50px;
+        }
+    }
+</style>

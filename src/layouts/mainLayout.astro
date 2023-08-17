@@ -1,6 +1,7 @@
 ---
 import Navbar from "../components/navbar.astro"
 import "../styles/mainLayout.scss"
+import "../styles/mixins.scss"
 ---
 
 <!DOCTYPE html>
@@ -15,3 +16,9 @@ import "../styles/mainLayout.scss"
     <slot/>
 </body>
 </html>
+
+<style>
+    body {
+        overflow-x: hidden;
+    }
+</style>
